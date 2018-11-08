@@ -1,0 +1,18 @@
+{
+
+  "description": "Adds a solid red border to all webpages matching mozilla.org. See https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#borderify",
+  "manifest_version": 2,
+  "name": "PoemReview",
+  "version": "1.0",
+  "icons": {
+    "48": "icons/PoemReview.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://bingapppoem.azurewebsites.net/*"],
+      "js": ["PoemReview.js"]
+    }
+  ]
+
+}
